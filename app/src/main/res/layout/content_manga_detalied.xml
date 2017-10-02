@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Controllers.MangaDetaliedActivity"
+    tools:showIn="@layout/activity_manga_detalied">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:id="@+id/coverdetailed"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_menu_share"
+        android:layout_alignParentTop="true"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_below="@+id/coverdetailed"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chaptersRC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/info">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+        android:text="Large Text"
+        android:id="@+id/nameD"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/coverdetailed"
+        android:layout_toEndOf="@+id/coverdetailed" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+        android:text="Medium Text"
+        android:id="@+id/genre"
+        android:layout_alignLeft="@+id/nameD"
+        android:layout_alignStart="@+id/nameD"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/coverdetailed"
+        android:layout_below="@+id/nameD" />
+
+
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/datanotfound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:gravity="center"
+        android:singleLine="false"
+        app:minTextSize="6sp"
+        android:layout_below="@+id/genre"
+        android:layout_alignLeft="@+id/genre"
+        android:layout_alignStart="@+id/genre" />
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/chapter"
+    android:layout_marginBottom="4dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="#cac6b4">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/chaptersnumber"
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:text="Medium Text"
+        android:gravity="center|left"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:singleLine="false"
+        android:textSize="15sp"
+        autofit:minTextSize="6sp"/>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/chaptersName"
+
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:layout_alignLeft="@id/chaptersnumber"
+        android:singleLine="false"
+        android:text="exmple"
+        android:textSize="16sp"
+        autofit:minTextSize="6sp" />
+</android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
